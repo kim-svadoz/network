@@ -1,0 +1,27 @@
+package basic;
+
+import java.io.BufferedInputStream;
+import java.io.FileOutputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class URLTest02 {
+	public static void main(String[] args) {
+		URL url;
+		try {
+			url = new URL("http://tv01.search.naver.net/ugc?t=r100&q=http://cafefiles.naver.net/20120209_226/pododumok_13287752996753FNE4_jpg/%C0%E5%B5%BF%B0%C7_5_pododumok.jpg\r\n");
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		BufferedInputStream br = new BufferedInputStream(url.openStream()));
+		FileOutputStream fos = new FileOutputStream("");
+		while(true) {
+			String data_byte = br.readLine();
+			if(data_byte==null) { //스트링의 끝을 만나면 while을 빠져나가기
+				break;
+			}
+			System.out.println(data_byte);
+		}
+	}
+}

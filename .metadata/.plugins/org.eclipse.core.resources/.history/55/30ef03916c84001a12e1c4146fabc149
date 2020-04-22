@@ -1,0 +1,10 @@
+package basic;
+
+import java.net.Inet4Address;
+
+//InetAddress - IP를 표현하기 위한 객체
+public class inetAddressTest {
+	public static void main(String[] args) {
+		InetAddress ia = Inet4Address.getByName(args[0]);
+	}
+}
