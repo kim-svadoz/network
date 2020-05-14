@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\iot\\setup\\java\\work\\network\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=C\:\\iot\\work\\work\\network\\.git;C\:\\iot\\work\\work\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;C\:\\iot\\work\\work\\.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
